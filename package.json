@@ -1,0 +1,40 @@
+{
+  "name": "@tomoyd/create-project",
+  "version": "1.0.0",
+  "description": "输入提示：inquirer enquirer prompts",
+  "main": "src/index.js",
+  "bin": {
+    "@tomoyd/create-project": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "type": "commonjs",
+  "keywords": [
+    "cli",
+    "create-project"
+  ],
+  "files": [
+    "bin/",
+    "dist/",
+    "templates/"
+  ],
+  "author": "tomo",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "chalk": "^4.1.2",
+    "esm": "^3.2.25",
+    "execa": "^5.1.1",
+    "inquirer": "^8.2.2",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0",
+    "rollup": "^2.70.1"
+  }
+}
