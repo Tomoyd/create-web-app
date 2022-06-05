@@ -12,12 +12,12 @@ program
   .version('0.1.0');
 
 program
-  .command('create')
   .description('create a new app')
   .argument('<name>', "project's name")
   .option('-t,--template', 'a template')
   .option('-g, --git', 'a template')
   .action((name, options) => {
+    console.log('name', name);
     create(name, options);
   });
 

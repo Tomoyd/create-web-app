@@ -2,10 +2,10 @@
   "name": "@tomoyd/create-web-app",
   "version": "2.0.0",
   "description": "输入提示：inquirer enquirer prompts",
-  "main": "src/index.js",
+  "main": "dist/create.js",
   "bin": {
-    "@tomoyd/create-web-app": "bin/create-project",
-    "create-web-app": "bin/create-project"
+    "@tomoyd/create-web-app": "bin/index",
+    "create-web-app": "bin/index"
   },
   "publishConfig": {
     "access": "public"
@@ -29,7 +29,6 @@
   "author": "tomo",
   "license": "ISC",
   "dependencies": {
-    "@types/chalk": "^2.2.0",
     "@types/fs-extra": "^9.0.13",
     "@types/inquirer": "^8.2.1",
     "arg": "^5.0.1",
