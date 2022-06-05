@@ -1,0 +1,39 @@
+{
+    "name": "<%= name %>",
+    "version": "1.0.0",
+    "description": "输入提示：inquirer enquirer prompts",
+    "main": "src/index.js",
+    "bin": {
+      "@tomoyd/create-project": "bin/create-project",
+      "create-project": "bin/create-project"
+    },
+    "publishConfig": {
+      "access": "public"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "rollup -c rollup.config.ts --configPlugin typescript ",
+      "rc": "node ./bin/index create my-app"
+    },
+    "type": "commonjs",
+    "keywords": [
+      "cli",
+      "create-project"
+    ],
+    "files": [
+      "bin/",
+      "dist/",
+      "templates/"
+    ],
+    "author": "tomo",
+    "license": "ISC",
+    "dependencies": <%- dependencies %> ,
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^22.0.0",
+      "@rollup/plugin-node-resolve": "^13.3.0",
+      "@rollup/plugin-typescript": "^8.3.2",
+      "rollup-plugin-dts": "^4.2.2",
+      "rollup-plugin-esbuild": "^4.9.1"
+    }
+  }
+  

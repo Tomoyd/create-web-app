@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+/**
+ * @type {import("commander").Command}
+ */
+const { Command } = require('commander');
+const { create } = require('../dist/create');
+const program = new Command();
+
+program
+  .name('create-web-app')
+  .description('CLI to create web application')
+  .version('0.1.0');
+
+program
+  .command('create')
+  .description('create a new app')
+  .argument('<name>', "project's name")
+  .option('-t,--template', 'a template')
+  .option('-g, --git', 'a template')
+  .action((name, options) => {
+    create(name, options);
+  });
+
+program.parse();
