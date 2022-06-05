@@ -1,6 +1,6 @@
 {
   "name": "@tomoyd/create-web-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "输入提示：inquirer enquirer prompts",
   "main": "src/index.js",
   "bin": {
